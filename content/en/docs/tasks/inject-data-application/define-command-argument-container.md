@@ -107,7 +107,9 @@ script. To run your command in a shell, wrap it like this:
 
 ```shell
 command: ["/bin/sh"]
-args: ["-c", "while true; do echo hello; sleep 10;done"]
+args: ["-c", "while true; do echo hello; sleep 10;done"]       //Palla
+                                                                // command: [ "/bin/bash", "-c", "--" ]
+                                                                //args: [ "while true; do sleep 30; done;" ]
 ```
 
 ## {{% heading "whatsnext" %}}
